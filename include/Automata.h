@@ -16,7 +16,7 @@ enum STATES {
 };
 
 class Automata {
-private:
+ private:
   int cash;
   std::string menu[MAX_DRINKS];
   int prices[MAX_DRINKS];
@@ -25,7 +25,7 @@ private:
   int chosenDrink;
   bool loadMenuFromFile(const std::string& filename);
 
-public:
+ public:
   Automata();
   explicit Automata(const std::string& filename);
   void on();
